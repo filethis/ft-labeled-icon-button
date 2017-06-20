@@ -8,34 +8,60 @@
 
 
 <!--
-
 A square button that has an icon with a small text label below it.
-
 @demo demo/index.html
  -->
 <dom-module id="demo-fixture">
 
-    <style include="iron-flex iron-flex-alignment iron-positioning"></style>
-
     <template>
 
-        <ft-labeled-icon-button></ft-labeled-icon-button>
+        <style include="iron-flex iron-flex-alignment iron-positioning"></style>
+
+        <style>
+            :host {
+                display:block;
+            }
+        </style>
+
+        <div class="layout vertical center">
+
+            <!-- Normal -->
+            <div class="layout horizontal center">
+                <div style="width:150px; font-size:14pt" align="right">Normal:</div>
+                <div style="width:35px;"></div>
+                <ft-labeled-icon-button icon="delete"></ft-labeled-icon-button>
+            </div>
+
+            <div style="height:25px;"></div>
+
+            <!-- Disabled -->
+            <div class="layout horizontal center">
+                <div style="width:150px; font-size:14pt" align="right">Disabled:</div>
+                <div style="width:35px;"></div>
+                <ft-labeled-icon-button disabled icon="delete"></ft-labeled-icon-button>
+            </div>
+
+            <div style="height:25px;"></div>
+
+            <!-- Toggle -->
+            <div class="layout horizontal center">
+                <div style="width:150px; font-size:14pt" align="right">Toggles:</div>
+                <div style="width:35px;"></div>
+                <ft-labeled-icon-button toggles icon="delete"></ft-labeled-icon-button>
+            </div>
+
+        </div>
 
     </template>
 
     <script>
-
         Polymer
         ({
             is: 'demo-fixture',
-
             properties:
             {
             }
-
         });
-
     </script>
 
 </dom-module>
-

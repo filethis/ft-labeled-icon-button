@@ -41,6 +41,7 @@ limitations under the License.
                           disabled="{{disabled}}"
                           toggles="{{toggles}}"
                           active="{{active}}"
+                          pressed="{{pressed}}"
                           style="width:40px; min-width:40px; height:40px; max-height:40px; background-color:white">
                 <div class="layout vertical center">
 
@@ -103,12 +104,12 @@ limitations under the License.
 
             _activeChanged: function(to, from)
             {
-//                this.pressed = !this.active;
+                this.pressed = !this.active;
             },
 
             _pressedChanged: function(to, from)
             {
-//                this.active = !this.pressed;
+                this.active = !this.pressed;
             }
         })
     </script>

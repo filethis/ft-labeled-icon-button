@@ -2,4 +2,4 @@
 
 ### \<ft-labeled-icon-button\>
 
-A square button that has an icon with a small text label below it.
+This element defines square button that has an icon with a small text label below it.

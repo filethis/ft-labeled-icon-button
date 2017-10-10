@@ -4,6 +4,8 @@
     "main": "ft-labeled-icon-button.html",
     "dependencies": {
         "ft-element-demo": "filethis/ft-element-demo#^0.0.1",
+        "iron-icon": "PolymerElements/iron-icon#1 - 2",
+        "iron-icons": "PolymerElements/iron-icons#1 - 2",
         "polymer": "Polymer/polymer#1.9 - 2"
     },
     "devDependencies": {

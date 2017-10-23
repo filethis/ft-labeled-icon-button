@@ -31,43 +31,39 @@ This element defines square button that has an icon with a small text label belo
     <template>
         <style include="iron-flex iron-flex-alignment iron-positioning">
 
+            :host {
+                display:block;
+                overflow:hidden;
+                @apply --ft-labeled-icon-button;
+            }
+
             :host([disabled]) {
                 pointer-events: none;
             }
         </style>
 
-        <style>
-            :host {
-                display:block;
-                @apply --ft-labeled-icon-button;
-            }
-        </style>
+        <!-- A button with an icon above a small label -->
+        <paper-button raised
+                      disabled="[[disabled]]"
+                      toggles="[[toggles]]"
+                      active="{{active}}"
+                      style="width:40px; min-width:40px; height:40px; max-height:40px; background-color:white; margin:3px; ">
+            <div class="layout vertical center">
 
-        <div>
+                <!-- Icon -->
+                <iron-icon
+                        style="--iron-icon-fill-color:var(--ft-labeled-icon-button-icon-fill-color); "
+                        icon="[[icon]]"
+                        src="[[iconSrc]]">
+                </iron-icon>
 
-            <!-- A button with an icon above a small label -->
-            <paper-button raised
-                          disabled="[[disabled]]"
-                          toggles="[[toggles]]"
-                          active="{{active}}"
-                          style="width:40px; min-width:40px; height:40px; max-height:40px; background-color:white">
-                <div class="layout vertical center">
-
-                    <!-- Icon -->
-                    <iron-icon
-                            style="--iron-icon-fill-color:var(--ft-labeled-icon-button-icon-fill-color); "
-                            icon="[[icon]]"
-                            src="[[iconSrc]]">
-                    </iron-icon>
-
-                    <!-- Label -->
-                    <div style="font-family:Arial; font-size:8pt; text-transform:none; padding-bottom:4px">
-                        [[label]]
-                    </div>
-
+                <!-- Label -->
+                <div style="font-family:Arial; font-size:8pt; text-transform:none; padding-bottom:4px">
+                    [[label]]
                 </div>
-            </paper-button>
-        </div>
+
+            </div>
+        </paper-button>
 
     </template>
 

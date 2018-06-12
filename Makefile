@@ -1,6 +1,6 @@
 # Project configuration
 NAME=ft-labeled-icon-button
-VERSION=1.0.17
+VERSION=1.0.18
 LOCAL_PORT=3506
 GITHUB_USER=filethis
 GITHUB_USER_ABBREV=ft

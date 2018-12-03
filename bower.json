@@ -3,7 +3,7 @@
     "description": "A square button that has an icon with a small text label below it.",
     "main": "ft-labeled-icon-button.html",
     "dependencies": {
-        "ft-element-demo": "filethis/ft-element-demo#^1.0.14",
+        "ft-element-demo": "filethis/ft-element-demo#^1.0.15",
         "iron-icon": "PolymerElements/iron-icon#2.1.0",
         "iron-icons": "PolymerElements/iron-icons#2.1.1",
         "polymer": "Polymer/polymer#^2.7.0"

@@ -1,20 +1,24 @@
-<!-- ft-labeled-icon-button element demo -->
-
-<!-- Imports -->
-<link rel="import" href="../../ft-element-demo/ft-element-demo.html">
-<link rel="import" href="../../iron-flex-layout/iron-flex-layout-classes.html">
-<link rel="import" href="../../polymer/polymer.html">
-<link rel="import" href="../ft-labeled-icon-button.html">
-
-
-<!--
+/* ft-labeled-icon-button element demo */
+/* Imports */
+/**
 A square button that has an icon with a small text label below it.
 @demo
- -->
-<dom-module id="demo-fixture">
+ */
+/*
+  FIXME(polymer-modulizer): the above comments were extracted
+  from HTML and may be out of place here. Review them and
+  then delete this comment!
+*/
+import 'ft-element-demo/ft-element-demo.js';
 
-    <template>
-
+import '@polymer/iron-flex-layout/iron-flex-layout-classes.js';
+import '@polymer/polymer/polymer-legacy.js';
+import '../ft-labeled-icon-button.js';
+import { Polymer } from '@polymer/polymer/lib/legacy/polymer-fn.js';
+import { html } from '@polymer/polymer/lib/utils/html-tag.js';
+Polymer
+({
+  _template: html`
         <style include="iron-flex iron-flex-alignment iron-positioning"></style>
 
         <style>
@@ -39,7 +43,7 @@ A square button that has an icon with a small text label below it.
             <div class="layout horizontal center">
                 <div style="width:150px; font-size: 14pt" align="right">Disabled:</div>
                 <div style="width:35px;"></div>
-                <ft-labeled-icon-button disabled icon="delete"></ft-labeled-icon-button>
+                <ft-labeled-icon-button disabled="" icon="delete"></ft-labeled-icon-button>
             </div>
 
             <div style="height:25px;"></div>
@@ -48,21 +52,15 @@ A square button that has an icon with a small text label below it.
             <div class="layout horizontal center">
                 <div style="width:150px; font-size: 14pt" align="right">Toggles:</div>
                 <div style="width:35px;"></div>
-                <ft-labeled-icon-button toggles icon="delete"></ft-labeled-icon-button>
+                <ft-labeled-icon-button toggles="" icon="delete"></ft-labeled-icon-button>
             </div>
 
         </div>
+`,
 
-    </template>
+  is: 'demo-fixture',
 
-    <script>
-        Polymer
-        ({
-            is: 'demo-fixture',
-            properties:
-            {
-            }
-        });
-    </script>
-
-</dom-module>
+  properties:
+  {
+  }
+});

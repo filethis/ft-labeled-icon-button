@@ -1,7 +1,7 @@
 {
   "description": "A square button that has an icon with a small text label below it.",
-  "name": "filethis/ft-labeled-icon-button",
-  "version": "filethis/1.0.21",
+  "name": "ft-labeled-icon-button",
+  "version": "1.0.21",
   "resolutions": {
     "inherits": "2.0.3",
     "samsam": "1.1.3",
@@ -12,6 +12,7 @@
   "dependencies": {
     "@polymer/iron-icon": "^3.0.0",
     "@polymer/iron-icons": "^3.0.0",
+    "@polymer/paper-button": "^3.0.0",
     "@polymer/polymer": "^3.0.0"
   },
   "devDependencies": {

@@ -17,11 +17,6 @@ This element defines square button that has an icon with a small text label belo
 
 @demo
 */
-/*
-  FIXME(polymer-modulizer): the above comments were extracted
-  from HTML and may be out of place here. Review them and
-  then delete this comment!
-*/
 import '@polymer/iron-flex-layout/iron-flex-layout-classes.js';
 
 import '@polymer/iron-icon/iron-icon.js';

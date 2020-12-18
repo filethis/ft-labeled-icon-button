@@ -1,6 +1,6 @@
 {
   "description": "A square button that has an icon with a small text label below it.",
-  "name": "ft-labeled-icon-button",
+  "name": "@filethis/ft-labeled-icon-button",
   "version": "1.0.21",
   "main": "ft-labeled-icon-button.js",
   "files": [
@@ -34,5 +34,21 @@
     "chai": "^4.2.0",
     "mocha": "^6.1.4",
     "wct-mocha": "^1.0.1"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/filethis/ft-labeled-icon-button.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/filethis/ft-labeled-icon-button/issues"
+  },
+  "homepage": "https://github.com/filethis/ft-labeled-icon-button#readme"
 }

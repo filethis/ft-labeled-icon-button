@@ -1,7 +1,7 @@
 {
   "description": "A square button that has an icon with a small text label below it.",
   "name": "@filethis/ft-labeled-icon-button",
-  "version": "1.0.21",
+  "version": "3.0.0",
   "main": "ft-labeled-icon-button.js",
   "files": [
     "*.html",

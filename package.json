@@ -2,6 +2,13 @@
   "description": "A square button that has an icon with a small text label below it.",
   "name": "@filethis/ft-labeled-icon-button",
   "version": "3.0.0",
+  "resolutions": {
+    "growl": "1.10.5",
+    "lodash": "4.17.20",
+    "marked": "1.2.7",
+    "minimist": "1.2.5",
+    "debug": "4.3.1"
+  },
   "main": "ft-labeled-icon-button.js",
   "files": [
     "*.html",
@@ -21,6 +28,7 @@
     "polymer.json"
   ],
   "dependencies": {
+    "npm-force-resolutions": "0.0.3",
     "@polymer/iron-icon": "^3.0.0",
     "@polymer/iron-icons": "^3.0.0",
     "@polymer/paper-button": "^3.0.0",
@@ -38,6 +46,7 @@
     "test": "test"
   },
   "scripts": {
+    "preinstall": "npx npm-force-resolutions",
     "test": "mocha"
   },
   "repository": {

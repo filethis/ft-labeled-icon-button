@@ -28,21 +28,11 @@
     "polymer.json"
   ],
   "dependencies": {
-    "npm-force-resolutions": "0.0.3",
+    "@webcomponents/webcomponentsjs": "^2.0.0",
     "@polymer/iron-icon": "^3.0.0",
     "@polymer/iron-icons": "^3.0.0",
     "@polymer/paper-button": "^3.0.0",
     "@polymer/polymer": "^3.0.0"
-  },
-  "devDependencies": {
-    "@babel/helpers": "^7.12.5",
-    "babel-helpers": "^6.24.1",
-    "@polymer/iron-demo-helpers": "^3.1.0",
-    "@polymer/test-fixture": "^4.0.2",
-    "@webcomponents/webcomponentsjs": "^2.0.0",
-    "chai": "^4.2.0",
-    "mocha": "^6.1.4",
-    "wct-mocha": "^1.0.1"
   },
   "directories": {
     "test": "test"
